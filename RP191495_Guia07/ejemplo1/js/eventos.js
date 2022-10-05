@@ -12,10 +12,10 @@ function iniciar() {
  //y asociar los eventos correspondientes
  //Primera caja de texto
  var textFieldFocus = document.frmEjemplo.txtfoco;
- textFieldFocus.onfocus = foco();
+ textFieldFocus.onfocus = foco;
  //Segunda caja de texto
  var textFieldKey = document.frmEjemplo.txttecla;
- textFieldKey.onkeypress = tecla();
+ textFieldKey.onkeypress = tecla;
     //Campo select
  var selectField = document.frmEjemplo.selopciones;
  selectField.onchange = function(){
