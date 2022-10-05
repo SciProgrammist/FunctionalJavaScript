@@ -1,4 +1,13 @@
-function iniciar(){
+function foco() {
+ alert("Foco en la primera Caja");
+ this.focus();
+}
+function tecla() {
+ alert("Pulsaste una tecla");
+ this.focus();
+}
+
+function iniciar() {
  //Definir objetos sobre los que se escucharán eventos
  //y asociar los eventos correspondientes
  //Primera caja de texto
@@ -27,14 +36,6 @@ function iniciar(){
  chkbox3.addEventListener("click", function(){
  activarCasilla(chkbox3, chkbox3.value);
  }, false);
-}
-function foco(){
- alert("Foco en la primera Caja");
- this.focus();
-}
-function tecla(){
- alert("Pulsaste una tecla");
- this.focus();
 }
 function cambioOpcion(nuevaOpcion){
  alert("Has cambiado a la opción " + nuevaOpcion);
